@@ -27,3 +27,46 @@ The dataset contains two columns:
 The classifier achieves an accuracy of approximately `84%` (replace with actual result). Other metrics such as Precision, Recall, and F1-Score are used for a more comprehensive performance evaluation.
 
 
+
+# Titanic Survivor Prediction
+
+This project builds a **machine learning model** to predict whether a passenger survived the Titanic disaster based on several features. The dataset used is the famous Titanic dataset available from Kaggle.
+
+## Project Structure
+- `Titanic_survivor_prediction.ipynb`: Jupyter notebook containing code for data preprocessing, model building, training, and evaluation.
+- `data`: Directory for storing the dataset (`train.csv`, `test.csv`).
+- `models`: Directory to store trained model files for later use.
+
+## Dataset
+The dataset contains the following key features:
+- **PassengerId**: ID of the passenger.
+- **Pclass**: Ticket class (1st, 2nd, 3rd).
+- **Name**: Name of the passenger.
+- **Sex**: Gender of the passenger.
+- **Age**: Age of the passenger.
+- **SibSp**: Number of siblings/spouses aboard.
+- **Parch**: Number of parents/children aboard.
+- **Ticket**: Ticket number.
+- **Fare**: Passenger fare.
+- **Cabin**: Cabin number (if available).
+- **Embarked**: Port of embarkation.
+- **Survived**: Target variable (1 if survived, 0 otherwise).
+
+## Steps Involved
+1. **Data Preprocessing**:
+   - Handling missing values for features like Age, Cabin, and Embarked.
+   - Encoding categorical features (e.g., Sex, Embarked).
+   - Feature scaling for models sensitive to feature magnitude.
+
+2. **Model Training**:
+   - Several machine learning models are used, including Logistic Regression, Random Forest, and Decision Tree.
+   - Cross-validation and hyperparameter tuning are performed to improve model performance.
+
+3. **Evaluation**:
+   - Accuracy, Precision, Recall, F1-score, and AUC are used for model evaluation.
+
+## Results
+The model achieves an accuracy of approximately `95%` (replace with actual result) in predicting whether a passenger survived the Titanic disaster. Precision, Recall, and AUC are also considered for evaluating model performance.
+
+
+
